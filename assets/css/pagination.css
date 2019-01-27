@@ -1,0 +1,20 @@
+.row.no-gutters.pagination-container {
+  margin-bottom:25px;
+}
+
+.row.no-gutters.pagination-control {
+  max-width:300px;
+}
+
+.row.no-gutters.pagination-control .col.align-self-center {
+  text-align:center;
+}
+
+.pgntn-info span {
+  font-size:0.9rem;
+}
+
+.prev-next a {
+  font-size:1rem;
+}
+

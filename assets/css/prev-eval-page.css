@@ -1,0 +1,42 @@
+.successmsg {
+  user-select:none;
+}
+
+.successmsg {
+  text-align:center;
+}
+
+.modal.success-modal {
+  background:rgba(255,255,255,0.8);
+}
+
+.modal-content.success {
+  background:none;
+  border:none;
+}
+
+.modal-body.success {
+  text-align:center;
+}
+
+.prev-eval-icon {
+  margin-right:5px;
+}
+
+.badge.badge-primary.prev-eval {
+  float:right;
+  background:rgb(1,133,22);
+}
+
+.card.prev-eval .card-body {
+  padding:10px;
+}
+
+.card.prev-eval {
+  margin-bottom:10px;
+}
+
+h1, h2, h3, h4, h5 {
+  margin-bottom:0;
+}
+

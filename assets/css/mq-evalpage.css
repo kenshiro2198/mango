@@ -1,0 +1,65 @@
+@media (max-width: 709px) {
+  .instruction-container {
+    position:relative;
+    margin-top:120px;
+    margin-bottom:7px;
+    background:rgb(232,232,232);
+    border:none;
+  }
+}
+
+@media (max-width: 709px) {
+  .faculty-details-container {
+    float:left;
+    margin-left:10px;
+  }
+}
+
+@media (max-width: 575px) {
+  .card-footer.eval-questions {
+    padding:0px;
+  }
+}
+
+@media (max-width: 545px) {
+  .table-responsive.eval-questions {
+    width:100%;
+  }
+}
+
+@media (max-width: 520px) {
+  .eval-radio-label {
+    font-size:0.8rem;
+  }
+}
+
+@media (max-width: 485px) {
+  .eval-radio-label {
+    font-size:0.7rem;
+  }
+}
+
+@media (max-width: 467px) {
+  .table-responsive.eval-questions {
+  }
+}
+
+@media (max-width: 322px) {
+  .card-footer.eval.questions {
+  }
+}
+
+@media (max-width: 390px) {
+  .eval-radio-label {
+    margin:0;
+    padding:0 11px;
+  }
+}
+
+@media (max-width: 390px) {
+  .table-responsive.eval-questions {
+    width:100%;
+    margin:auto;
+  }
+}
+

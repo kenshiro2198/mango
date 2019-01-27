@@ -1,0 +1,18 @@
+.about-us-section-content .card {
+  margin-bottom:50px;
+  box-shadow:1px 1px rgb(164,164,164);
+}
+
+.text-center.about-us {
+  font-family:'Noto Sans', sans-serif;
+  /*margin:50px 0;*/
+  font-size:2.5rem;
+  color:rgb(0,0,0);
+  text-shadow:1px 1px rgb(255,255,255);
+}
+
+.about-us-section-content {
+  width:100%;
+  padding:0 100px;
+}
+

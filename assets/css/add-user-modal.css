@@ -1,0 +1,75 @@
+.less-fields {
+  display:grid;
+  grid-template-columns:auto auto;
+  grid-column-gap:5px;
+}
+
+#adduserfield0 {
+  /*display:none;*/
+}
+
+#adduserfield1 {
+  display:none;
+}
+
+#adduserfield2 {
+  display:none;
+}
+
+#adduserfield3 {
+  display:none;
+}
+
+.left-align {
+  margin-left:68px;
+}
+
+.add-userimage {
+  margin:auto;
+  height:38px;
+}
+
+.user-image {
+  margin:auto;
+  object-fit:cover;
+  width:70px;
+  height:70px;
+}
+
+.twoauto {
+  display:grid;
+  grid-template-columns:auto auto;
+  grid-column-gap:5px;
+}
+
+.form-group.nametxt-grp {
+  display:grid;
+  grid-template-columns:auto auto auto auto;
+  grid-column-gap:5px;
+}
+
+.form-group.nametxt-grp.left-align {
+  display:grid;
+  grid-template-columns:auto auto auto auto auto;
+  grid-column-gap:5px;
+}
+
+.form-group.nametxt-grp-account.left-align {
+  display:grid;
+  grid-template-columns:auto auto auto auto;
+  grid-column-gap:5px;
+}
+
+.user-section {
+  height:auto;
+  width:100%;
+  /*border:1px solid red;*/
+}
+
+.school-title {
+  font-family:Raleway, sans-serif;
+  font-weight:bold;
+  font-style:normal;
+  font-size:1.3rem;
+}
+

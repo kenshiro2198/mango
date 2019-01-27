@@ -1,0 +1,42 @@
+#registerform {
+  padding-top:0;
+}
+
+.text-center.log-reg-heading {
+  margin:7px 0;
+}
+
+.regmarginbottom {
+  margin-bottom:10px;
+}
+
+.login-clean form .form-control.studreg {
+  background:#f7f9fc;
+  border:none;
+  border-bottom:1px solid #dfe7f1;
+  border-radius:5px;
+  box-shadow:none;
+  outline:none;
+  color:inherit;
+  text-indent:8px;
+  height:50px;
+}
+
+.form-control.user-details:focus {
+  box-shadow:none !important;
+  outline:none !important;
+  border-color:rgb(0,60,212);
+}
+
+.form-control.user-details {
+  display:inline;
+  border-top:none;
+  border-left:none;
+  border-right:none;
+  border-radius:0;
+  width:100%;
+  overflow:visible;
+  border-radius:0;
+  background:none;
+}
+

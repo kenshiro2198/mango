@@ -1,0 +1,188 @@
+.container.details-button {
+  padding:40px 50px;
+}
+
+.container.index-image {
+  width:500px;
+  height:100%;
+  padding:0;
+}
+
+.navbar .active {
+  border-bottom:2px solid rgb(0,35,125);
+}
+
+.carousel-inner {
+  border-radius:.3rem;
+  height:412.5px;
+  object-fit:contain !important;
+}
+
+.simple-slider {
+  overflow:hidden;
+  border-radius:.3rem;
+}
+
+.btn.btn-primary.btn-sm.dropdown-toggle.user-btn {
+  background:none;
+  color:black;
+}
+
+.form-check-label.showpass {
+  font-size:0.9rem;
+  display:block;
+  float:right;
+  margin:5px 0;
+  user-select:none;
+}
+
+.form-check-input.showpass {
+  display:none;
+}
+
+.modal {
+  background-color:rgba(255,255,255,0.5);
+}
+
+.close:focus {
+  outline:none !important;
+}
+
+#wrapper {
+  /*max-width:2000px;*/
+  margin:auto;
+}
+
+.dashboard-subtitle {
+  color:rgb(240,240,240);
+  font-size:1rem;
+  /*text-shadow:1px 1px black;*/
+  font-family:'Noto Sans', sans-serif;
+}
+
+.dashboard-heading {
+  color:#ffffff;
+  font-family:Raleway, sans-serif;
+  /*text-shadow:1px 1px rgb(0,0,0);*/
+}
+
+.btn.btn-primary.register {
+  margin-left:10px;
+  background-color:rgb(1,133,22);
+  border-color:rgba(0,0,0,0.0);
+}
+
+.btn.btn-primary.login {
+  border-color:rgba(0,0,0,0.0);
+  background-color:rgb(1,54,133);
+}
+
+.school-title, .system-title {
+  margin-bottom:0px;
+}
+
+.col-auto.align-self-center.logo-title {
+  padding:0px 5px;
+}
+
+.col-auto.title {
+  padding:20px;
+  padding-left:0px;
+  padding-right:0px;
+}
+
+.dashboard-section {
+  background-position:top;
+  background-size:cover;
+  background-repeat:no-repeat;
+  padding:100px 180px;
+  background-image:url("../../assets/img/divine grace school.jpg");
+}
+
+.jumbotron.dgs-dashboard {
+  background-color:rgba(57,57,57,0.4);
+  height:400px;
+  width:100%;
+  max-width:1300px;
+  margin:auto;
+  padding:0;
+  overflow:hidden;
+}
+
+.link-logo {
+}
+
+.row.logo-title {
+  width:100%;
+}
+
+body {
+  background:rgb(203,203,203);
+  /*height:auto;*/
+}
+
+.wrapper {
+  height:100vh;
+  background-color:rgb(240,240,240);
+}
+
+.navbar {
+  width:100%;
+  height:auto;
+  background-color:#ffffff;
+  border-top:2px solid rgba(0,35,125,0.68);
+  padding-left:10%;
+  z-index:10;
+  position:relative;
+  box-shadow:0 0 3px 0;
+}
+
+.btn.btn-primary:focus {
+  border-color:transparent;
+}
+
+.btn.btn-primary:active {
+  outline:none !important;
+  border:none !important;
+  box-shadow:none;
+}
+
+.btn.btn-primary {
+  background:rgb(167,167,167);
+  outline:none !important;
+  border:none !important;
+  box-shadow:none;
+}
+
+.btn.btn-primary:active {
+  outline:none !important;
+  border:none !important;
+}
+
+.modal-log-reg-input {
+  border-top:none;
+  border-left:none;
+  border-right:none;
+  border-radius:0;
+}
+
+.modal-log-reg-container {
+  width:100%;
+  margin:auto;
+  background-color:transparent;
+  border-radius:4px;
+  color:#505e6c;
+}
+
+.modal-log-reg-input {
+  border-top:none;
+  border-left:none;
+  border-right:none;
+  border-radius:0;
+}
+
+.system-title {
+  font-size:0.8rem;
+  font-family:Raleway, sans-serif;
+}
+

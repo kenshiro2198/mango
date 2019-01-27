@@ -1,0 +1,30 @@
+.text-content p {
+  margin:0;
+}
+
+.text-content {
+  padding:10px;
+}
+
+.contact-us-icon {
+  color:rgb(54,54,54);
+  font-size:2rem;
+  margin:13px;
+}
+
+.icon-container {
+  background:rgb(255,255,255);
+  height:100%;
+  width:100%;
+}
+
+.contact-us-bar {
+  height:auto;
+  width:100%;
+  background:rgb(255,255,255);
+  display:grid;
+  grid-template-columns:55px auto;
+  overflow:hidden;
+  border-bottom:1px dotted rgb(89,89,89);
+}
+

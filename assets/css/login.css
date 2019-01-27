@@ -1,0 +1,167 @@
+.illustration img {
+  width:150px;
+}
+
+.logerrmsg {
+  font-family:verdana;
+  font-size:0.7rem;
+  line-height:1rem;
+  color:black;
+  height:auto;
+  width:100%;
+  border:1px solid rgb(125,0,0);
+  padding:10px;
+  background:rgba(255,0,0,0.14);
+}
+
+.logerrmsg.inputs {
+  font-family:verdana;
+  font-size:0.7rem;
+  line-height:1rem;
+  color:black;
+  /*width:150px;*/
+  border:1px solid rgb(125,0,0);
+  padding:5px;
+  background:rgba(255,0,0,0.14);
+}
+
+.btn.btn-outline-primary.backbtn:active {
+  background:none !important;
+}
+
+.btn.btn-outline-primary.backbtn:hover {
+  color:inherit;
+}
+
+.userlog:focus {
+  outline:none !important;
+  box-shadow:none !important;
+  border-color:rgb(0,60,212);
+}
+
+.log-reg-input {
+  border-top:none;
+  border-left:none;
+  border-right:none;
+  /*border-radius:0;*/
+  padding:10px;
+}
+
+.btn.btn-outline-primary.btn-lg {
+  background-color:rgb(219,219,219);
+  border:none;
+  color:white;
+}
+
+.text-center.heading {
+  font-family:Raleway, sans-serif;
+  color:rgb(89,89,89);
+  font-size:25px;
+  margin-bottom:0px;
+}
+
+.backbtn:active {
+  outline:none !important;
+  box-shadow:none !important;
+  color:gray;
+}
+
+.backbtn:hover {
+  background:none;
+}
+
+.backbtn {
+  padding-bottom:2px;
+  border:none;
+  outline:none !important;
+  color:gray;
+}
+
+.btn.btn-primary.btn-block.form-button:hover {
+  background:rgb(0,35,125);
+}
+
+.btn.btn-primary.btn-block {
+  position:relative;
+  display:block;
+  background-color:rgb(0,35,125);
+}
+
+#teachloginbtn {
+  position:relative;
+  display:block;
+  background-color:rgb(0,35,125);
+}
+
+.div-heading {
+  border-bottom:1px solid #9b9b9b;
+  width:100%;
+}
+
+.btn.btn-primary.btn-block {
+  border-radius:5px;
+  height:50px;
+}
+
+#teachloginform {
+  display:none;
+  background-color:#ffffff;
+  box-shadow:none;
+  border-radius:10px;
+  position:relative;
+  box-shadow:0px 0px 15px rgba(128,128,128,0.63);
+  position:relative;
+}
+
+#losginform {
+  background-color:#ffffff;
+  box-shadow:none;
+  border-radius:10px;
+  position:relative;
+  box-shadow:0px 0px 15px rgba(128,128,128,0.63);
+  position:relative;
+  width:400px;
+}
+
+#container {
+  width:100%;
+  visibility:visible;
+  position:absolute;
+  box-shadow:none;
+  position:relative;
+}
+
+.btn.btn-outline-primary.btn-lg.choosebtn-teach, .btn.btn-outline-primary.btn-lg.choosebtn-stud {
+  margin:10px;
+  width:340px;
+  height:50px;
+  border-color:rgb(0,0,0);
+  color:rgb(0,0,0);
+  font-size:1rem;
+}
+
+.btn.btn-outline-primary.btn-lg.choosebtn-stud:hover, .btn.btn-outline-primary.btn-lg.choosebtn-teach:hover {
+  background:rgba(195,195,195,0.19);
+}
+
+.btn.btn-outline-primary.btn-lg.choosebtn-stud:focus, .btn.btn-outline-primary.btn-lg.choosebtn-teach:focus {
+  outline:none !important;
+  box-shadow:none;
+}
+
+.user-choose {
+  padding:10px 10px;
+}
+
+.log-reg-container {
+  width:550PX;
+  height:550px;
+  margin:10px auto;
+  padding:80px;
+  border-radius:4px;
+  color:#505e6c;
+  padding-top:20px;
+  border:10px solid rgb(220,220,220);
+  border-radius:50%;
+}
+

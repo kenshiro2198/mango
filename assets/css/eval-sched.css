@@ -1,0 +1,12 @@
+.row.no-gutters.eval-sched span {
+  font-size:1.3rem;
+}
+
+.row.eval-sched {
+  border:1px dashed rgb(175,175,175);
+  /*margin:10px 0;*/
+  padding:8px 10px 20px 10px;
+  /*overflow:auto;*/
+  width:30%;
+}
+

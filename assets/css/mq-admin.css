@@ -1,0 +1,44 @@
+@media (max-width: 1150px) {
+  body {
+    min-width:1150px;
+    overflow:scroll;
+  }
+}
+
+@media (max-width: 868px) {
+  .table-cell {
+    font-size:0.8rem;
+  }
+}
+
+@media (max-width: 830px) {
+  .tab-content.manageusers {
+    padding:0 20px;
+  }
+}
+
+@media (max-width: 592px) {
+  .nav-link.child-manageusers, .nav-link.child-contentmanager {
+    width:130px;
+    font-size:0.8rem;
+  }
+}
+
+@media (max-width: 592px) {
+  .tab-content.manageusers, .tab-content.contentmanager {
+    padding:0;
+  }
+}
+
+@media (max-width: 592px) {
+  .text-center.user-management-headings {
+    font-size:1rem;
+  }
+}
+
+@media (max-width: 528px) {
+  .nav-link.manageusers {
+    font-size:1rem;
+  }
+}
+

@@ -1,0 +1,44 @@
+@media (max-width: 1051px) {
+  .container.index-image {
+    width:400px;
+    height:100%;
+    padding:30px;
+  }
+}
+
+@media (max-width: 1051px) {
+  .dashboard-section {
+    padding:50px 150px;
+  }
+}
+
+@media (max-width: 801px) {
+  .dashboard-section {
+    padding:50px 80px;
+  }
+}
+
+@media (max-width: 544px) {
+  .dashboard-section {
+    padding:20px 20px;
+  }
+}
+
+@media (max-width: 466px) {
+  .school-title {
+    font-size:1rem;
+  }
+}
+
+@media (max-width: 424px) {
+  .dashboard-heading {
+    font-size:2rem;
+  }
+}
+
+@media (max-width: 424px) {
+  .jumbotron.dgs-dashboard {
+    padding:30px;
+  }
+}
+

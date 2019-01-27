@@ -1,0 +1,37 @@
+.fac-load-table td {
+  border:none;
+}
+
+.fac-load-table thead {
+  text-align:center;
+}
+
+.colored-overlay {
+  width:123.2px;
+  height:auto;
+  color:white;
+  background:rgb(16,102,164);
+  position:absolute;
+  left:393px;
+  top:500px;
+  word-break:break-all;
+}
+
+.btn.btn-primary.fac-load-insertbtn {
+  margin:5px;
+}
+
+.fac-load-container table td {
+  text-align:center;
+}
+
+.form-inline.facultyload-add {
+  width:100%;
+  height:auto;
+  display:grid;
+  grid-template-columns:auto auto auto auto;
+  grid-column-gap:15px;
+  grid-row-gap:15px;
+  margin-bottom:10px;
+}
+

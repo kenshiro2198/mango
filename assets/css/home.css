@@ -1,0 +1,103 @@
+.small-heading {
+  font-size:0.8rem;
+  font-weight:400;
+}
+
+.sy-select:hover {
+  box-shadow:0 5px 0px 0 rgba(71,86,93,0.45);
+  transform:scale(1.1);
+  transition:0.3s;
+}
+
+.modal-header {
+  overflow:auto;
+}
+
+.close.update-area {
+  position:absolute;
+  top:10px;
+  right:15px;
+}
+
+.modal-header.update-area {
+  display:block;
+  overflow:auto;
+}
+
+.list-group.eval-comments li {
+  border:none;
+  padding:10px;
+}
+
+.nav-link.front-eval {
+  font-size:1rem;
+  padding:0;
+  padding:5px;
+}
+
+.nav-link.active.front-eval {
+  color:rgb(0,35,125) !important;
+}
+
+.nav.nav-tabs.nav-justified.front-eval {
+  border-bottom:none;
+}
+
+.nav-link.active.front-eval {
+  border:none;
+  padding:5px;
+}
+
+.front-eval .nav.nav-tabs.nav-justified.front-eval a {
+  color:black;
+  font-family:'Libre Franklin';
+}
+
+.rounded-circle.image:hover {
+  border-color:rgb(84,110,122);
+  transition:0.2s ease;
+}
+
+.evaluate-heading {
+  border-bottom:1px solid rgb(84,110,122);
+  padding:10px;
+}
+
+.container.user-bar div h6 {
+  margin:0;
+}
+
+.container.user-bar div {
+  padding-top:20px;
+  width:190px;
+}
+
+.rounded-circle.image {
+  object-fit:cover;
+  border:3px solid rgb(198,198,198);
+  object-fit:contain;
+}
+
+.container.user-bar {
+  display:grid;
+  grid-template-columns:auto auto;
+  height:auto;
+  width:300px;
+  margin:0;
+  padding:0;
+}
+
+.user-circles-container {
+  padding:10px;
+  height:auto;
+  width:auto;
+  display:grid;
+  grid-template-columns:auto auto auto;
+  grid-row-gap:30px;
+  grid-column-gap:15px;
+}
+
+#home {
+  padding:0;
+}
+

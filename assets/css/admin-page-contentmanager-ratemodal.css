@@ -1,0 +1,71 @@
+.rate-choices-heading-value {
+  width:25%;
+}
+
+.rate-choices-heading-desc {
+  width:70%;
+}
+
+.model-rate-container {
+  padding:0;
+  margin-bottom:10px;
+}
+
+.btn.btn-outline-primary.rate-choices-submit {
+  color:white;
+  border:none;
+  background:#9d9d9d;
+}
+
+.btn.btn-primary.rate-delete-btn:active {
+  background:none !important;
+  outline:none !important;
+  box-shadow:none !important;
+}
+
+.btn.btn-primary.rate-delete-btn:hover {
+  color:rgb(141,141,141);
+}
+
+.btn.btn-primary.rate-delete-btn {
+  background:none;
+  color:rgb(192,192,192);
+}
+
+#add-rate-btn-container {
+  text-align:center;
+}
+
+.text-center.rate-option-heading {
+  font-family:'Libre Franklin', sans-serif;
+  font-size:1rem;
+  font-weight:bold;
+}
+
+.col-3.rate-option-col {
+  padding:0 10px;
+}
+
+.rate-input-rating {
+  width:40px;
+  height:30px;
+  border:1px solid rgb(205,205,205);
+  border-radius:5px;
+  text-align:center;
+  outline:none !important;
+  display:block;
+  margin:0 14px 0 0;
+}
+
+.rate-input {
+  width:100%;
+  border-top:none;
+  border-left:none;
+  border-right:none;
+  border-bottom:1px solid rgb(202,202,202);
+  outline:none !important;
+  display:block;
+  text-align:center;
+  margin:auto;
+}
+
