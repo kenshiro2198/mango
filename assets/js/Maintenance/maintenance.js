@@ -56,7 +56,7 @@
 	        var depta = $("#department").val();
 	        var sy = 1; //$('.sytab').val();
 	        $.ajax({
-	            url: "assets/php/Maintenance/maintenance.php",
+	            url: "../assets/php/Maintenance/maintenance.php",
 	            type:"POST",
 	            data:{
 	                "department" : 1,
@@ -64,7 +64,7 @@
 	                "sy"    : sy
 	            },
 	            success: function(data){
-	                $("#department_section_detail").html(data);
+	                $("#department_detail").html(data);
 	                var delayInMilliseconds = 5000; //1 second
 	                setTimeout(function() {
 						$('.errmsgcontainer').attr('hidden','true');
@@ -79,7 +79,7 @@
 	        var dept = $("#department").val();
 	        var sy = 1;
 	        $.ajax({
-	            url: "assets/php/Maintenance/maintenance.php",
+	            url: "../assets/php/Maintenance/maintenance.php",
 	            type:"POST",
 	            data:{
 	                "department" : 2,
@@ -89,7 +89,7 @@
 	            },
 	            success: function(data){
 	                $("#department").val('');
-	               	$("#department_section_detail").html(data);
+	               	$("#department_detail").html(data);
 	               	var delayInMilliseconds = 5000; //1 second
 	                setTimeout(function() {
 						$('.errmsgcontainer').attr('hidden','true');
@@ -111,14 +111,14 @@
 				var e=[];$(".archivedepartment:checked").each(function(t){
 				e[t]=$(this).val()}),0===e.length?
 		        alert("Please Select atleast 1 data"):$.ajax({
-		            url: "assets/php/Maintenance/maintenance.php",
+		            url: "../assets/php/Maintenance/maintenance.php",
 		            type:"POST",
 		            data:{
 		                "department" : 3,
 		                "checkArr" : e
 		            },
 		            success: function(data){
-		                $("#department_section_detail").html(data);
+		                $("#department_detail").html(data);
 		               	var delayInMilliseconds = 5000; //1 second
 		                setTimeout(function() {
 							$('.errmsgcontainer').attr('hidden','true');
@@ -133,7 +133,7 @@
 	        var id = $(this).attr('data-name');
 	        if ($(this).prop("checked") == false) {
 	                $.ajax({
-	                url: "assets/php/Maintenance/maintenance.php",
+	                url: "../assets/php/Maintenance/maintenance.php",
 	                type:"POST",
 	                data:{
 	                    "department" : 4,
@@ -146,7 +146,7 @@
 	        }
 	        else if ($(this).prop("checked") == true){
 	            $.ajax({
-	                url: "assets/php/Maintenance/maintenance.php",
+	                url: "../assets/php/Maintenance/maintenance.php",
 	                type:"POST",
 	                data:{
 	                    "department" : 5,
@@ -211,7 +211,7 @@
 	        var gra = $("#grade").val();
 	        var sy = 1; //$('.sytab').val();
 	        $.ajax({
-	            url: "assets/php/Maintenance/maintenance.php",
+	            url: "../assets/php/Maintenance/maintenance.php",
 	            type:"POST",
 	            data:{
 	                "grade" : 1,
@@ -219,7 +219,7 @@
 	                "sy"    : sy
 	            },
 	            success: function(data){
-	                $("#grade_section_detail").html(data);
+	                $("#grade_detail").html(data);
 	                var delayInMilliseconds = 5000; //1 second
 	                setTimeout(function() {
 						$('.errmsgcontainer').attr('hidden','true');
@@ -234,7 +234,7 @@
 	        var gr = $("#grade").val();
 	        var sy = 1;
 	        $.ajax({
-	            url: "assets/php/Maintenance/maintenance.php",
+	            url: "../assets/php/Maintenance/maintenance.php",
 	            type:"POST",
 	            data:{
 	                "grade" : 2,
@@ -244,7 +244,7 @@
 	            },
 	            success: function(data){
 	                $("#grade").val('');
-	               	$("#grade_section_detail").html(data);
+	               	$("#grade_detail").html(data);
 	               	var delayInMilliseconds = 5000; //1 second
 	                setTimeout(function() {
 						$('.errmsgcontainer').attr('hidden','true');
@@ -266,14 +266,14 @@
 				var e=[];$(".archivegrade:checked").each(function(t){
 				e[t]=$(this).val()}),0===e.length?
 		        alert("Please Select atleast 1 data"):$.ajax({
-		            url: "assets/php/Maintenance/maintenance.php",
+		            url: "../assets/php/Maintenance/maintenance.php",
 		            type:"POST",
 		            data:{
 		                "grade" : 3,
 		                "checkArr" : e
 		            },
 		            success: function(data){
-		                $("#grade_section_detail").html(data);
+		                $("#grade_detail").html(data);
 		               	var delayInMilliseconds = 5000; //1 second
 		                setTimeout(function() {
 							$('.errmsgcontainer').attr('hidden','true');
@@ -337,7 +337,7 @@
 	        var gr = $("#grsc").val();
 	        var sy = 1; //$('.sytab').val();
 	        $.ajax({
-	            url: "assets/php/Maintenance/maintenance.php",
+	            url: "../assets/php/Maintenance/maintenance.php",
 	            type:"POST",
 	            data:{
 	                "section" : 1,
@@ -346,7 +346,7 @@
 	                "sy" : sy
 	            },
 	            success: function(data){
-	                $(".section_section_detail").html(data);
+	                $("#section_detail").html(data);
 	                var delayInMilliseconds = 5000; //1 second
 	                setTimeout(function() {
 						$('.errmsgcontainer').attr('hidden','true');
@@ -362,7 +362,7 @@
 	        var gr = $('#grsc').val();
 	        var sy = 1;
 	        $.ajax({
-	            url: "assets/php/Maintenance/maintenance.php",
+	            url: "../assets/php/Maintenance/maintenance.php",
 	            type:"POST",
 	            data:{
 	                "section" : 2,
@@ -384,7 +384,7 @@
 	            	}, delayInMilliseconds);
 	            },
 	            success: function(data){
-	               	$(".section_section_detail").html(data);
+	               	$("#section_detail").html(data);
 	               	var delayInMilliseconds = 5000;
 	                setTimeout(function() {
 						$('.errmsgcontainer').attr('hidden','true');
@@ -406,14 +406,14 @@
 				var e=[];$(".archivesection:checked").each(function(t){
 				e[t]=$(this).val()}),0===e.length?
 		        alert("Please Select atleast 1 data"):$.ajax({
-		            url: "assets/php/Maintenance/maintenance.php",
+		            url: "../assets/php/Maintenance/maintenance.php",
 		            type:"POST",
 		            data:{
 		                "section" : 3,
 		                "checkArr" : e
 		            },
 		            success: function(data){
-		                $(".section_section_detail").html(data);
+		                $("#section_detail").html(data);
 		               	var delayInMilliseconds = 5000; //1 second
 		                setTimeout(function() {
 							$('.errmsgcontainer').attr('hidden','true');
@@ -428,7 +428,7 @@
 	        var id = $(this).attr('data-name');
 	        if ($(this).prop("checked") == false) {
 	                $.ajax({
-	                url: "assets/php/Maintenance/maintenance.php",
+	                url: "../assets/php/Maintenance/maintenance.php",
 	                type:"POST",
 	                data:{
 	                    "section" : 4,
@@ -440,7 +440,7 @@
 	        }
 	        else if ($(this).prop("checked") == true){
 	            $.ajax({
-	                url: "assets/php/Maintenance/maintenance.php",
+	                url: "../assets/php/Maintenance/maintenance.php",
 	                type:"POST",
 	                data:{
 	                    "section" : 5,
@@ -507,7 +507,7 @@
 	        alert(gr);
 	        var sy = 1; //$('.sytab').val();
 	        $.ajax({
-	            url: "assets/php/Maintenance/maintenance.php",
+	            url: "../assets/php/Maintenance/maintenance.php",
 	            type:"POST",
 	            data:{
 	                "subject" : 1,
@@ -516,7 +516,7 @@
 	                "sy"   : sy
 	            },
 	            success: function(data){
-	                $("#subject_section_detail").html(data);
+	                $("#subject_detail").html(data);
 	                var delayInMilliseconds = 5000; //1 second
 	                setTimeout(function() {
 						$('.errmsgcontainer').attr('hidden','true');
@@ -532,7 +532,7 @@
 	        var gr = $("#grsb").val();
 	        var sy = 1;
 	        $.ajax({
-	            url: "assets/php/Maintenance/maintenance.php",
+	            url: "../assets/php/Maintenance/maintenance.php",
 	            type:"POST",
 	            data:{
 	                "subject" : 2,
@@ -542,7 +542,7 @@
 	            },
 	            success: function(data){
 	                $("#subject").val('');
-	               	$("#subject_section_detail").html(data);
+	               	$("#subject_detail").html(data);
 	               	var delayInMilliseconds = 5000; //1 second
 	                setTimeout(function() {
 						$('.errmsgcontainer').attr('hidden','true');
@@ -564,14 +564,14 @@
 				var e=[];$(".archivesubject:checked").each(function(t){
 				e[t]=$(this).val()}),0===e.length?
 		        alert("Please Select atleast 1 data"):$.ajax({
-		            url: "assets/php/Maintenance/maintenance.php",
+		            url: "../assets/php/Maintenance/maintenance.php",
 		            type:"POST",
 		            data:{
 		                "subject" : 3,
 		                "checkArr" : e
 		            },
 		            success: function(data){
-		                $("#subject_section_detail").html(data);
+		                $("#subject_detail").html(data);
 		               	var delayInMilliseconds = 5000; //1 second
 		                setTimeout(function() {
 							$('.errmsgcontainer').attr('hidden','true');
@@ -586,7 +586,7 @@
 	        var id = $(this).attr('data-name');
 	        if ($(this).prop("checked") == false) {
 	                $.ajax({
-	                url: "assets/php/Maintenance/maintenance.php",
+	                url: "../assets/php/Maintenance/maintenance.php",
 	                type:"POST",
 	                data:{
 	                    "subject" : 4,
@@ -599,7 +599,7 @@
 	        }
 	        else if ($(this).prop("checked") == true){
 	            $.ajax({
-	                url: "assets/php/Maintenance/maintenance.php",
+	                url: "../assets/php/Maintenance/maintenance.php",
 	                type:"POST",
 	                data:{
 	                    "subject" : 5,
@@ -664,7 +664,7 @@
 	        var rm = $("#room").val();
 	        var sy = 1; //$('.sytab').val();
 	        $.ajax({
-	            url: "assets/php/Maintenance/maintenance.php",
+	            url: "../assets/php/Maintenance/maintenance.php",
 	            type:"POST",
 	            data:{
 	                "room" : 1,
@@ -672,7 +672,7 @@
 	                "sy"   : sy
 	            },
 	            success: function(data){
-	                $("#room_section_detail").html(data);
+	                $("#room_detail").html(data);
 	                var delayInMilliseconds = 5000; //1 second
 	                setTimeout(function() {
 						$('.errmsgcontainer').attr('hidden','true');
@@ -687,7 +687,7 @@
 	        var rm = $("#room").val();
 	        var sy = 1;
 	        $.ajax({
-	            url: "assets/php/Maintenance/maintenance.php",
+	            url: "../assets/php/Maintenance/maintenance.php",
 	            type:"POST",
 	            data:{
 	                "room" : 2,
@@ -696,7 +696,7 @@
 	                
 	            },
 	            success: function(data){
-	               	$("#room_section_detail").html(data);
+	               	$("#room_detail").html(data);
 	               	var delayInMilliseconds = 5000; //1 second
 	                setTimeout(function() {
 						$('.errmsgcontainer').attr('hidden','true');
@@ -718,14 +718,14 @@
 				var e=[];$(".archiveroom:checked").each(function(t){
 				e[t]=$(this).val()}),0===e.length?
 		        alert("Please Select atleast 1 data"):$.ajax({
-		            url: "assets/php/Maintenance/maintenance.php",
+		            url: "../assets/php/Maintenance/maintenance.php",
 		            type:"POST",
 		            data:{
 		                "room" : 3,
 		                "checkArr" : e
 		            },
 		            success: function(data){
-		                $("#room_section_detail").html(data);
+		                $("#room_detail").html(data);
 		               	var delayInMilliseconds = 5000; //1 second
 		                setTimeout(function() {
 							$('.errmsgcontainer').attr('hidden','true');
@@ -740,7 +740,7 @@
 	        var id = $(this).attr('data-name');
 	        if ($(this).prop("checked") == false) {
 	                $.ajax({
-	                url: "assets/php/Maintenance/maintenance.php",
+	                url: "../assets/php/Maintenance/maintenance.php",
 	                type:"POST",
 	                data:{
 	                    "room" : 4,
@@ -753,7 +753,7 @@
 	        }
 	        else if ($(this).prop("checked") == true){
 	            $.ajax({
-	                url: "assets/php/Maintenance/maintenance.php",
+	                url: "../assets/php/Maintenance/maintenance.php",
 	                type:"POST",
 	                data:{
 	                    "room" : 5,
@@ -809,11 +809,8 @@ $(document).on('click', '#save-area-btn', function() //ADD AREA
 	var evalstype = document.querySelector('input[name="for-evaltype"]:checked').value;
 	//!AREA AND QUESTIONNAIRE TYPE VALUE
 	
-	alert(weightnum1);
-	alert(newareatxt);
 	alert(newweighttxt);
-	alert(qtype);
-	alert(evalstype);
+
 	if(newareatxt == '' || newweighttxt == '')
 	{
 		document.getElementById('succnewa').innerHTML = '';
@@ -825,7 +822,7 @@ $(document).on('click', '#save-area-btn', function() //ADD AREA
 
 	else
 	{
-		if(newweighttxt > weightnum1 || newweighttxt > weightnum2 || newweighttxt > weightnum3 || newweighttxt > weightnum4)
+		if(newweighttxt > weightnum1 && newweighttxt > weightnum2 && newweighttxt > weightnum3 && newweighttxt > weightnum4)
 		{
 			document.getElementById('succnewa').innerHTML = '';
 			$("#errnewa").text("Area weight exceeded").fadeIn(400, function()
@@ -833,6 +830,33 @@ $(document).on('click', '#save-area-btn', function() //ADD AREA
 				$(this).fadeOut(5000);
 			});
 		}
+
+		// else if(newweighttxt > weightnum2)
+		// {
+		// 	document.getElementById('succnewa').innerHTML = '';
+		// 	$("#errnewa").text("Area weight exceeded").fadeIn(400, function()
+		// 	{
+		// 		$(this).fadeOut(5000);
+		// 	});
+		// }
+
+		// else if(newweighttxt > weightnum3)
+		// {
+		// 	document.getElementById('succnewa').innerHTML = '';
+		// 	$("#errnewa").text("Area weight exceeded").fadeIn(400, function()
+		// 	{
+		// 		$(this).fadeOut(5000);
+		// 	});
+		// }
+
+		// else if(newweighttxt > weightnum4)
+		// {
+		// 	document.getElementById('succnewa').innerHTML = '';
+		// 	$("#errnewa").text("Area weight exceeded").fadeIn(400, function()
+		// 	{
+		// 		$(this).fadeOut(5000);
+		// 	});
+		// }
 			
 		else
 		{
@@ -849,7 +873,7 @@ $(document).on('click', '#save-area-btn', function() //ADD AREA
 			},
 			success: function(response)
 			{
-				if(response === 'Area name in the same evaluation and question type already exist')
+				if(response == 'Area name in the same evaluation and question type already exist')
 				{
 					document.getElementById('succnewa').innerHTML = '';
 					$("#errnewa").text(response).fadeIn(400, function()
@@ -908,134 +932,750 @@ $(document).on('click', '#save-area-btn', function() //ADD AREA
 	}
 });
 	//edit
+$(document).on('click', 'button[class="btn btn-primary update-area-btn"]', function() //PUT VALUES IN MODAL
+{
+	var id = $(this).data('id');
+	var an = $(this).siblings('#anmodal').val();
+	var aw = $(this).siblings('#awmodal').val();
+	var evalstype = $(this).siblings('#evalstype').val();
+	var weightval = $(this).siblings('#weightval').val();
+	var qtypeval = $(this).siblings('#qtypeval').val();
+	var $clicked = $(this).parent().parent();
+	
+	$('#hiddenid').val(id);
+	$('#hiddenet').val(evalstype);
+	$('#hiddenwv').val(weightval);
+	$('#hiddenqtype').val(qtypeval);
+	$('h4#anum').text(an);
+	$('h6#awum').text(aw);
+	$($(this).data('target')).modal('show');
+});
+
+$(document).on('click', '#update-area-btn', function() //UPDATE AREA
+{
+	var id = $('#hiddenid').val();
+	var evalstype = $('#hiddenet').val();
+	var weightval = $('#hiddenwv').val();
+	var qtype = $('#hiddenqtype').val();
+	var updateareatxt = $.trim( $('#updateareatxt').val() );
+	var updateweighttxt = $.trim( $('#updateweighttxt').val() );
+	var weightnum1 = parseFloat($('#area1').val());
+	var weightnum2 = parseFloat($('#area2').val());
+	var weightnum3 = parseFloat($('#area3').val());
+	var weightnum4 = parseFloat($('#area4').val());
+	var $clicked = $('button[name="updatebtn'+id+'"').parent().parent();
+	
+	alert('id'+id);
+	alert('evalstype'+evalstype);
+	alert('weightval'+weightval);
+	alert('qtype'+qtype);
+	alert('updateareatxt'+updateareatxt);
+	alert('updateweighttxt'+updateweighttxt);
+	alert('weightnum1'+weightnum1);
+	alert('weightnum2'+weightnum2);
+	alert('weightnum3'+weightnum3);
+	alert('weightnum4'+weightnum4);
+		if(evalstype == '1')
+		{
+			let total1 = parseFloat(weightnum1) + parseFloat(weightval);
+			var total2 = parseFloat(total1.toFixed(2));
+			let total3 = parseFloat(total2) - parseFloat(updateweighttxt);
+			var total4 = total3.toFixed(2);
+		
+			if(updateareatxt == '') //UPDATE AREA WEIGHT
+			{
+				if(updateweighttxt == '')
+				{
+					document.getElementById('succmsgum').innerHTML = '';
+					$("#errmsgum").text("Fill atleast 1 field").fadeIn(400, function()
+					{
+						$(this).fadeOut(5000);
+					});
+				}
+			
+				else
+				{
+					if(updateweighttxt > total2)
+					{
+						document.getElementById('succmsgum').innerHTML = '';
+						$("#errmsgum").text("Area weight exceeded").fadeIn(400, function()
+						{
+							$(this).fadeOut(5000);
+						});
+					}
+			
+					else
+					{
+						$.ajax({
+						url: '../assets/php/Maintenance/Evaluation/update-areaweight.php',
+						type: 'POST',
+						data:
+						{
+							'update': 1,
+							'id': id,
+							'evalstype': evalstype,
+							'updateweighttxt': updateweighttxt,
+							'total4': total4,
+							'qtype': qtype
+						},
+						success: function(response)
+						{
+							$('#area1').val(total4);
+							$('#hiddenwv').val(updateweighttxt);
+							$('#updateweighttxt').val('');
+							// $clicked.replaceWith(response);
+							document.getElementById('errmsgum').innerHTML = '';
+							$("#succmsgum").text("Area weight updated").fadeIn(400, function()
+							{
+								$(this).fadeOut(5000);
+							});
+						}
+					});
+				}
+			}
+		}
+		
+		else if(updateweighttxt == '')
+		{
+			$.ajax({
+				url: '../assets/php/Maintenance/Evaluation/update-areaname.php',
+				method: 'POST',
+				data:
+				{
+					'update': 1,
+					'id': id,
+					'updateareatxt': updateareatxt,
+					'evalstype': evalstype,
+					'weightval': weightval,
+					'qtype': qtype
+				},
+				success: function(response)
+				{
+					if(response == 'existed')
+					{
+						document.getElementById('succmsgum').innerHTML = '';
+						$("#errmsgum").text("Area Name in the Same Evaluation and Question Type Already Exist").fadeIn(400, function()
+						{
+							$(this).fadeOut(5000);
+						});
+					}
+					
+					else
+					{
+						var result = $.parseJSON(response);
+						$('#updateareatxt').val('');
+						$('#hiddenid').val(result[1]);
+						$clicked.replaceWith(result[0]);
+						document.getElementById('errmsgum').innerHTML = '';
+						$("#succmsgum").text("Area name updated").fadeIn(400, function()
+						{
+							$(this).fadeOut(5000);
+						});
+					}
+				}
+			});
+		}
+		
+	// 	else
+	// 	{
+	// 		if(updateweighttxt > total2)
+	// 		{
+	// 			document.getElementById('succmsgum').innerHTML = '';
+	// 			document.getElementById('errmsgum').innerHTML = 'Area weight exceeded';
+	// 		}
+			
+	// 		else
+	// 		{
+	// 			$.ajax({
+	// 			url: 'assets/php/update-area.php',
+	// 			type: 'POST',
+	// 			data:
+	// 			{
+	// 				'update': 1,
+	// 				'id': id,
+	// 				'updateweighttxt': updateweighttxt,
+	// 				'updateareatxt': updateareatxt,
+	// 				'evalstype': evalstype,
+	// 				'total4': total4,
+	// 				'qtype': qtype
+	// 			},
+	// 			success: function(response)
+	// 			{
+	// 				if(response == 'existed')
+	// 				{
+	// 					document.getElementById('succmsgum').innerHTML = '';
+	// 					document.getElementById('errmsgum').innerHTML = 'Area Name in the Same Evaluation and Question Type Already Exist';
+	// 				}
+	// 				else
+	// 				{
+	// 				var result = $.parseJSON(response);
+	// 				$('#updateareatxt').val('');
+	// 				$('#updateweighttxt').val('');
+	// 				$('#area1').val(total4);
+	// 				$('#hiddenwv').val(updateweighttxt);
+	// 				$('#hiddenid').val(result[1]);
+	// 				$clicked.replaceWith(result[0]);
+	// 				document.getElementById('errmsgum').innerHTML = '';
+	// 				document.getElementById('succmsgum').innerHTML = 'Area Name and Weight Updated';
+	// 				}
+	// 			}
+	// 			});
+	// 		}
+	// 	}
+	// }
+	
+	// if(evalstype === '002')
+	// {
+	// 	let total1 = parseFloat(weightnum2) + parseFloat(weightval);
+	// 	var total2 = parseFloat(total1.toFixed(2));
+	// 	let total3 = parseFloat(total2) - parseFloat(updateweighttxt);
+	// 	var total4 = total3.toFixed(2);
+		
+	// 	if(updateareatxt == '')
+	// 	{
+	// 		if(updateweighttxt == '')
+	// 		{
+	// 			document.getElementById('succmsgum').innerHTML = '';
+	// 			document.getElementById('errmsgum').innerHTML = 'Fill atleast 1 field';
+	// 		}
+			
+	// 		else
+	// 		{
+	// 		if(updateweighttxt > total2)
+	// 		{
+	// 			document.getElementById('succmsgum').innerHTML = '';
+	// 			document.getElementById('errmsgum').innerHTML = 'Area weight exceeded';
+	// 		}
+			
+	// 		else
+	// 		{
+	// 			$.ajax({
+	// 			url: 'assets/php/update-areaweight.php',
+	// 			type: 'POST',
+	// 			data:
+	// 			{
+	// 				'update': 1,
+	// 				'id': id,
+	// 				'evalstype': evalstype,
+	// 				'updateweighttxt': updateweighttxt,
+	// 				'total4': total4,
+	// 				'qtype': qtype
+	// 			},
+	// 			success: function(response)
+	// 			{
+	// 				$('#area2').val(total4);
+	// 				$('#hiddenwv').val(updateweighttxt);
+	// 				$('#updateweighttxt').val('');
+	// 				// $clicked.replaceWith(response);
+	// 				document.getElementById('errmsgum').innerHTML = '';
+	// 				document.getElementById('succmsgum').innerHTML = 'Area Weight Updated';
+	// 			}
+	// 			});
+	// 		}
+	// 	}
+	// 	}
+		
+	// 	else if(updateweighttxt == '')
+	// 	{
+	// 		$.ajax({
+	// 			url: 'assets/php/update-areaname.php',
+	// 			method: 'POST',
+	// 			data:
+	// 			{
+	// 				'update': 1,
+	// 				'id': id,
+	// 				'updateareatxt': updateareatxt,
+	// 				'evalstype': evalstype,
+	// 				'weightval': weightval,
+	// 				'qtype': qtype
+	// 			},
+	// 			success: function(response)
+	// 			{
+	// 				if(response === 'existed')
+	// 				{
+	// 					document.getElementById('succmsgum').innerHTML = '';
+	// 					document.getElementById('errmsgum').innerHTML = 'Area Name in the Same Evaluation and Question Type Already Exist';
+	// 				}
+					
+	// 				else
+	// 				{
+	// 				var result = $.parseJSON(response);
+	// 				$('#updateareatxt').val('');
+	// 				$('#hiddenid').val(result[1]);
+	// 				$clicked.replaceWith(result[0]);
+	// 				document.getElementById('errmsgum').innerHTML = '';
+	// 				document.getElementById('succmsgum').innerHTML = 'Area Name Updated';
+	// 				}
+	// 			}
+	// 		});
+	// 	}
+		
+	// 	else
+	// 	{
+	// 		if(updateweighttxt > total2)
+	// 		{
+	// 			document.getElementById('succmsgum').innerHTML = '';
+	// 			document.getElementById('errmsgum').innerHTML = 'Area weight exceeded';
+	// 		}
+			
+	// 		else
+	// 		{
+	// 			$.ajax({
+	// 			url: 'assets/php/update-area.php',
+	// 			type: 'POST',
+	// 			data:
+	// 			{
+	// 				'update': 1,
+	// 				'id': id,
+	// 				'updateweighttxt': updateweighttxt,
+	// 				'updateareatxt': updateareatxt,
+	// 				'evalstype': evalstype,
+	// 				'total4': total4,
+	// 				'qtype': qtype
+	// 			},
+	// 			success: function(response)
+	// 			{
+	// 				if(response == 'existed')
+	// 				{
+	// 					document.getElementById('succmsgum').innerHTML = '';
+	// 					document.getElementById('errmsgum').innerHTML = 'Area Name in the Same Evaluation and Question Type Already Exist';
+	// 				}
+	// 				else
+	// 				{
+	// 				var result = $.parseJSON(response);
+	// 				$('#updateareatxt').val('');
+	// 				$('#updateweighttxt').val('');
+	// 				$('#area2').val(total4);
+	// 				$('#hiddenwv').val(updateweighttxt);
+	// 				$('#hiddenid').val(result[1]);
+	// 				$clicked.replaceWith(result[0]);
+	// 				document.getElementById('errmsgum').innerHTML = '';
+	// 				document.getElementById('succmsgum').innerHTML = 'Area Name and Weight Updated';
+	// 				}
+	// 			}
+	// 			});
+	// 		}
+	// 	}
+	// }
+	
+	// else if(evalstype === '003')
+	// {
+	// 	let total1 = parseFloat(weightnum3) + parseFloat(weightval);
+	// 	var total2 = parseFloat(total1.toFixed(2));
+	// 	let total3 = parseFloat(total2) - parseFloat(updateweighttxt);
+	// 	var total4 = total3.toFixed(2);
+		
+	// 	if(updateareatxt == '')
+	// 	{
+	// 		if(updateweighttxt == '')
+	// 		{
+	// 			document.getElementById('succmsgum').innerHTML = '';
+	// 			document.getElementById('errmsgum').innerHTML = 'Fill atleast 1 field';
+	// 		}
+			
+	// 		else
+	// 		{
+	// 		if(updateweighttxt > total2)
+	// 		{
+	// 			document.getElementById('succmsgum').innerHTML = '';
+	// 			document.getElementById('errmsgum').innerHTML = 'Area weight exceeded';
+	// 		}
+			
+	// 		else
+	// 		{
+	// 			$.ajax({
+	// 			url: 'assets/php/update-areaweight.php',
+	// 			type: 'POST',
+	// 			data:
+	// 			{
+	// 				'update': 1,
+	// 				'id': id,
+	// 				'evalstype': evalstype,
+	// 				'updateweighttxt': updateweighttxt,
+	// 				'total4': total4,
+	// 				'qtype': qtype
+	// 			},
+	// 			success: function(response)
+	// 			{
+	// 				$('#area3').val(total4);
+	// 				$('#hiddenwv').val(updateweighttxt);
+	// 				$('#updateweighttxt').val('');
+	// 				// $clicked.replaceWith(response);
+	// 				document.getElementById('errmsgum').innerHTML = '';
+	// 				document.getElementById('succmsgum').innerHTML = 'Area Weight Updated';
+	// 			}
+	// 			});
+	// 		}
+	// 	}
+	// 	}
+		
+	// 	else if(updateweighttxt == '')
+	// 	{
+	// 		$.ajax({
+	// 			url: 'assets/php/update-areaname.php',
+	// 			method: 'POST',
+	// 			data:
+	// 			{
+	// 				'update': 1,
+	// 				'id': id,
+	// 				'updateareatxt': updateareatxt,
+	// 				'evalstype': evalstype,
+	// 				'weightval': weightval,
+	// 				'qtype': qtype
+	// 			},
+	// 			success: function(response)
+	// 			{
+	// 				if(response === 'existed')
+	// 				{
+	// 					document.getElementById('succmsgum').innerHTML = '';
+	// 					document.getElementById('errmsgum').innerHTML = 'Area Name in the Same Evaluation and Question Type Already Exist';
+	// 				}
+					
+	// 				else
+	// 				{
+	// 				var result = $.parseJSON(response);
+	// 				$('#updateareatxt').val('');
+	// 				$('#hiddenid').val(result[1]);
+	// 				$clicked.replaceWith(result[0]);
+	// 				document.getElementById('errmsgum').innerHTML = '';
+	// 				document.getElementById('succmsgum').innerHTML = 'Area Name Updated';
+	// 				}
+	// 			}
+	// 		});
+	// 	}
+		
+	// 	else
+	// 	{
+	// 		if(updateweighttxt > total2)
+	// 		{
+	// 			document.getElementById('succmsgum').innerHTML = '';
+	// 			document.getElementById('errmsgum').innerHTML = 'Area weight exceeded';
+	// 		}
+			
+	// 		else
+	// 		{
+	// 			$.ajax({
+	// 			url: 'assets/php/update-area.php',
+	// 			type: 'POST',
+	// 			data:
+	// 			{
+	// 				'update': 1,
+	// 				'id': id,
+	// 				'updateweighttxt': updateweighttxt,
+	// 				'updateareatxt': updateareatxt,
+	// 				'evalstype': evalstype,
+	// 				'total4': total4,
+	// 				'qtype': qtype
+	// 			},
+	// 			success: function(response)
+	// 			{
+	// 				if(response == 'existed')
+	// 				{
+	// 					document.getElementById('succmsgum').innerHTML = '';
+	// 					document.getElementById('errmsgum').innerHTML = 'Area Name in the Same Evaluation and Question Type Already Exist';
+	// 				}
+	// 				else
+	// 				{
+	// 				var result = $.parseJSON(response);
+	// 				$('#updateareatxt').val('');
+	// 				$('#updateweighttxt').val('');
+	// 				$('#area3').val(total4);
+	// 				$('#hiddenwv').val(updateweighttxt);
+	// 				$('#hiddenid').val(result[1]);
+	// 				$clicked.replaceWith(result[0]);
+	// 				document.getElementById('errmsgum').innerHTML = '';
+	// 				document.getElementById('succmsgum').innerHTML = 'Area Name and Weight Updated';
+	// 				}
+	// 			}
+	// 			});
+	// 		}
+	// 	}
+	// }
+	
+	// else if(evalstype === '004')
+	// {
+	// 	let total1 = parseFloat(weightnum4) + parseFloat(weightval);
+	// 	var total2 = parseFloat(total1.toFixed(2));
+	// 	let total3 = parseFloat(total2) - parseFloat(updateweighttxt);
+	// 	var total4 = total3.toFixed(2);
+		
+	// 	if(updateareatxt == '')
+	// 	{
+	// 		if(updateweighttxt == '')
+	// 		{
+	// 			document.getElementById('succmsgum').innerHTML = '';
+	// 			document.getElementById('errmsgum').innerHTML = 'Fill atleast 1 field';
+	// 		}
+			
+	// 		else
+	// 		{
+	// 		if(updateweighttxt > total2)
+	// 		{
+	// 			document.getElementById('succmsgum').innerHTML = '';
+	// 			document.getElementById('errmsgum').innerHTML = 'Area weight exceeded';
+	// 		}
+			
+	// 		else
+	// 		{
+	// 			$.ajax({
+	// 			url: 'assets/php/update-areaweight.php',
+	// 			type: 'POST',
+	// 			data:
+	// 			{
+	// 				'update': 1,
+	// 				'id': id,
+	// 				'evalstype': evalstype,
+	// 				'updateweighttxt': updateweighttxt,
+	// 				'total4': total4,
+	// 				'qtype': qtype
+	// 			},
+	// 			success: function(response)
+	// 			{
+	// 				$('#area4').val(total4);
+	// 				$('#hiddenwv').val(updateweighttxt);
+	// 				$('#updateweighttxt').val('');
+	// 				// $clicked.replaceWith(response);
+	// 				document.getElementById('errmsgum').innerHTML = '';
+	// 				document.getElementById('succmsgum').innerHTML = 'Area Weight Updated';
+	// 			}
+	// 			});
+	// 		}
+	// 	}
+	// 	}
+		
+	// 	else if(updateweighttxt == '')
+	// 	{
+	// 		$.ajax({
+	// 			url: 'assets/php/update-areaname.php',
+	// 			method: 'POST',
+	// 			data:
+	// 			{
+	// 				'update': 1,
+	// 				'id': id,
+	// 				'updateareatxt': updateareatxt,
+	// 				'evalstype': evalstype,
+	// 				'weightval': weightval,
+	// 				'qtype': qtype
+	// 			},
+	// 			success: function(response)
+	// 			{
+	// 				if(response === 'existed')
+	// 				{
+	// 					document.getElementById('succmsgum').innerHTML = '';
+	// 					document.getElementById('errmsgum').innerHTML = 'Area Name in the Same Evaluation and Question Type Already Exist';
+	// 				}
+					
+	// 				else
+	// 				{
+	// 				var result = $.parseJSON(response);
+	// 				$('#updateareatxt').val('');
+	// 				$('#hiddenid').val(result[1]);
+	// 				$clicked.replaceWith(result[0]);
+	// 				document.getElementById('errmsgum').innerHTML = '';
+	// 				document.getElementById('succmsgum').innerHTML = 'Area Name Updated';
+	// 				}
+	// 			}
+	// 		});
+	// 	}
+		
+	// 	else
+	// 	{
+	// 		if(updateweighttxt > total2)
+	// 		{
+	// 			document.getElementById('succmsgum').innerHTML = '';
+	// 			document.getElementById('errmsgum').innerHTML = 'Area weight exceeded';
+	// 		}
+			
+	// 		else
+	// 		{
+	// 			$.ajax({
+	// 			url: 'assets/php/update-area.php',
+	// 			type: 'POST',
+	// 			data:
+	// 			{
+	// 				'update': 1,
+	// 				'id': id,
+	// 				'updateweighttxt': updateweighttxt,
+	// 				'updateareatxt': updateareatxt,
+	// 				'evalstype': evalstype,
+	// 				'total4': total4,
+	// 				'qtype': qtype
+	// 			},
+	// 			success: function(response)
+	// 			{
+	// 				if(response == 'existed')
+	// 				{
+	// 					document.getElementById('succmsgum').innerHTML = '';
+	// 					document.getElementById('errmsgum').innerHTML = 'Area Name in the Same Evaluation and Question Type Already Exist';
+	// 				}
+	// 				else
+	// 				{
+	// 				var result = $.parseJSON(response);
+	// 				$('#updateareatxt').val('');
+	// 				$('#updateweighttxt').val('');
+	// 				$('#area4').val(total4);
+	// 				$('#hiddenwv').val(updateweighttxt);
+	// 				$('#hiddenid').val(result[1]);
+	// 				$clicked.replaceWith(result[0]);
+	// 				document.getElementById('errmsgum').innerHTML = '';
+	// 				document.getElementById('succmsgum').innerHTML = 'Area Name and Weight Updated';
+	// 				}
+	// 			}
+	// 			});
+	// 		}
+	// 	}
+	}
+});
 	//delete
 $(document).on('click', 'button[class="close quest addquest"]', function() //DELETE AREA
 {
 	if(confirm('Are you sure you want to delete the area?'))
 	{
-	var id = $(this).data('id');
-	var evalstype = $(this).siblings('#evalstype').val();
-	var weightvalue = $(this).siblings('#weightvalue').val();
-	var weightnum1 = $('#area1').val();
-	var weightnum2 = $('#area2').val();
-	var weightnum3 = $('#area3').val();
-	var weightnum4 = $('#area4').val();
-	var $clicked = $(this);
-	
-	if(evalstype == '1')
-	{
-		let total = parseFloat(weightnum1) + parseFloat(weightvalue);
-		var totalnum = total.toFixed(2);
+		var id = $(this).data('id');
+		var evalstype = $(this).siblings('#evalstype').val();
+		var weightvalue = $(this).siblings('#weightvalue').val();
+		var weightnum1 = $('#area1').val();
+		var weightnum2 = $('#area2').val();
+		var weightnum3 = $('#area3').val();
+		var weightnum4 = $('#area4').val();
+		var $clicked = $(this);
+
+		if(evalstype == '1')
+		{
+			let total = parseFloat(weightnum1) + parseFloat(weightvalue);
+			var totalnum = total.toFixed(2);
 		
-		$.ajax({
-		url: '../assets/php/Maintenance/Evaluation/add-area.php',
-		type: 'GET',
-		data:
-		{
-			'delete': 1,
-			'id': id,
-			'evalstype': evalstype,
-			'totalnum': totalnum
-		},
-		success: function()
-		{
-			$('#area1').val(totalnum);
-			$clicked.parent().parent().parent().parent().parent().parent().remove();
+			$.ajax({
+				url: '../assets/php/Maintenance/Evaluation/delete-area.php',
+				type: 'GET',
+				data:
+				{
+					'delete': 1,
+					'id': id,
+					'evalstype': evalstype,
+					'totalnum': totalnum
+				},
+				success: function()
+				{
+					$('#area1').val(totalnum);
+					$clicked.parent().parent().parent().parent().parent().parent().remove();
+				}
+			});
 		}
-	});
-	}
 	
-	else if(evalstype === '002')
-	{
-		let total = parseFloat(weightnum2) + parseFloat(weightvalue);
-		var totalnum = total.toFixed(2);
+		else if(evalstype == '2')
+		{
+			let total = parseFloat(weightnum2) + parseFloat(weightvalue);
+			var totalnum = total.toFixed(2);
 		
-		$.ajax({
-		url: 'assets/php/delete-area.php',
-		type: 'GET',
-		data:
-		{
-			'delete': 1,
-			'id': id,
-			'evalstype': evalstype,
-			'totalnum': totalnum
-		},
-		success: function()
-		{
-			$('#area2').val(totalnum);
-			$clicked.parent().parent().parent().parent().parent().parent().remove();
+			$.ajax({
+				url: '../assets/php/Maintenance/Evaluation/delete-area.php',
+				type: 'GET',
+				data:
+				{
+					'delete': 1,
+					'id': id,
+					'evalstype': evalstype,
+					'totalnum': totalnum
+				},
+				success: function()
+				{
+					$('#area2').val(totalnum);
+					$clicked.parent().parent().parent().parent().parent().parent().remove();
+				}
+			});
 		}
-	});
-	}
 	
-	else if(evalstype === '003')
-	{
-		let total = parseFloat(weightnum3) + parseFloat(weightvalue);
-		var totalnum = total.toFixed(2);
+		else if(evalstype == '3')
+		{
+			let total = parseFloat(weightnum3) + parseFloat(weightvalue);
+			var totalnum = total.toFixed(2);
 		
-		$.ajax({
-		url: 'assets/php/delete-area.php',
-		type: 'GET',
-		data:
-		{
-			'delete': 1,
-			'id': id,
-			'evalstype': evalstype,
-			'totalnum': totalnum
-		},
-		success: function()
-		{
-			$('#area3').val(totalnum);
-			$clicked.parent().parent().parent().parent().parent().parent().remove();
+			$.ajax({
+				url: '../assets/php/Maintenance/Evaluation/delete-area.php',
+				type: 'GET',
+				data:
+				{
+					'delete': 1,
+					'id': id,
+					'evalstype': evalstype,
+					'totalnum': totalnum
+				},
+				success: function()
+				{
+					$('#area3').val(totalnum);
+					$clicked.parent().parent().parent().parent().parent().parent().remove();
+				}
+			});
 		}
-	});
-	}
 	
-		else if(evalstype === '004')
-	{
-		let total = parseFloat(weightnum4) + parseFloat(weightvalue);
-		var totalnum = total.toFixed(2);
+		else if(evalstype == '4')
+		{
+			let total = parseFloat(weightnum4) + parseFloat(weightvalue);
+			var totalnum = total.toFixed(2);
 		
-		$.ajax({
-		url: 'assets/php/delete-area.php',
-		type: 'GET',
-		data:
-		{
-			'delete': 1,
-			'id': id,
-			'evalstype': evalstype,
-			'totalnum': totalnum
-		},
-		success: function()
-		{
-			$('#area4').val(totalnum);
-			$clicked.parent().parent().parent().parent().parent().parent().remove();
+			$.ajax({
+				url: '../assets/php/Maintenance/Evaluation/delete-area.php',
+				type: 'GET',
+				data:
+				{
+					'delete': 1,
+					'id': id,
+					'evalstype': evalstype,
+					'totalnum': totalnum
+				},
+				success: function()
+				{
+					$('#area4').val(totalnum);
+					$clicked.parent().parent().parent().parent().parent().parent().remove();
+				}
+			});
 		}
-	});
 	}
-	}
+
 	else
 	{
 		
 	}
 });
-	//update active
-	//for peer
-$(document).on('click', "input[name='for-evaltype']", function()
+	//other needs
+$(document).on('click', "input[name='for-evaltype']", function()//for peer
 {
 	var a = document.querySelector("input[name='for-evaltype']:checked").value;
-
+	
 	if(a == '2')
 	{
 		document.getElementsByName("answer-rate-type")[0].style.display = 'none';
 		document.getElementById("label-peer").style.display = 'none';
 		document.getElementsByName("answer-rate-type")[1].checked = true;
+		document.getElementById("newweighttxt").style.display = 'none';
+		document.getElementById("newweighttxt").value = '0.00';
 	}
 
 	else
 	{
 		document.getElementsByName("answer-rate-type")[0].style.display = 'block';
 		document.getElementById("label-peer").style.display = 'block';
+		document.getElementById("newweighttxt").style.display = 'block';
+		document.getElementsByName("answer-rate-type")[0].checked = true;
+		document.getElementById("newweighttxt").value = '';
+	}
+});
+
+$(document).on('click', "input[name='answer-rate-type']", function()//for essay
+{
+	var a = document.querySelector("input[name='answer-rate-type']:checked").value;
+	
+	if(a == '2')
+	{
+		document.getElementById("newweighttxt").style.display = 'none';
+		document.getElementById("newweighttxt").value = '0.00';
+	}
+
+	else
+	{
+		document.getElementById("newweighttxt").style.display = 'block';
+		document.getElementById("newweighttxt").value = '';
 	}
 });
 
